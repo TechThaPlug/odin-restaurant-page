@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #2b2118;
+  background-color: #f5efe6;
+}
+
+header {
+  background-color: #2b2118;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+}
+
+nav button {
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #f5efe6;
+  background: none;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  border-color: #c2652a;
+}
+
+nav button.active {
+  background-color: #c2652a;
+}
+
+#content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.tab h1 {
+  margin: 0 0 16px;
+  font-size: 44px;
+  color: #c2652a;
+}
+
+.tagline {
+  font-size: 22px;
+  font-style: italic;
+}
+
+.hours {
+  font-weight: bold;
+}
+
+.dish {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #d8cdbd;
+}
+
+.dish h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.dish p {
+  grid-column: 1;
+  margin: 0;
+  color: #6b5d4d;
+}
+
+.price {
+  grid-row: 1;
+  grid-column: 2;
+  font-weight: bold;
+  color: #c2652a;
+}
